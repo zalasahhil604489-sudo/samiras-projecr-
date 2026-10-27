@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samira's Flower Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">🌷 Samira's Flower Shop</a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#flowers">Flowers</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">A LITTLE FLOWER, A LOT OF LOVE</p>
+      <h1>Flowers make<br>every day brighter.</h1>
+      <p>Beautiful bouquets for birthdays, celebrations, and just because.</p>
+      <a class="primary-button" href="#flowers">Explore flowers</a>
+    </section>
+
+    <section class="flowers-section" id="flowers">
+      <div class="section-heading">
+        <p class="eyebrow">OUR FAVORITES</p>
+        <h2>Fresh picks for you</h2>
+        <p>Choose a bouquet you love.</p>
+      </div>
+
+      <div class="flower-grid">
+        <article class="flower-card">
+          <div class="flower-art rose-art" aria-hidden="true">🌹</div>
+          <h3>Lovely Roses</h3>
+          <p>Classic roses to share your love.</p>
+          <div class="card-bottom">
+            <span class="price">$12</span>
+            <button class="add-button" type="button" data-flower="Lovely Roses" data-price="12">Add</button>
+          </div>
+        </article>
+
+        <article class="flower-card">
+          <div class="flower-art tulip-art" aria-hidden="true">🌷</div>
+          <h3>Pretty Tulips</h3>
+          <p>Colorful tulips to brighten a room.</p>
+          <div class="card-bottom">
+            <span class="price">$10</span>
+            <button class="add-button" type="button" data-flower="Pretty Tulips" data-price="10">Add</button>
+          </div>
+        </article>
+
+        <article class="flower-card">
+          <div class="flower-art daisy-art" aria-hidden="true">🌼</div>
+          <h3>Sunny Daisies</h3>
+          <p>Cheerful daisies full of happiness.</p>
+          <div class="card-bottom">
+            <span class="price">$8</span>
+            <button class="add-button" type="button" data-flower="Sunny Daisies" data-price="8">Add</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-icon" aria-hidden="true">💐</div>
+      <div>
+        <p class="eyebrow">A NOTE FROM US</p>
+        <h2>Made to make someone smile</h2>
+        <p>At Samira's Flower Shop, we believe small, thoughtful gifts can make a big difference. Pick a bouquet and share a little happiness.</p>
+      </div>
+    </section>
+
+    <section class="basket-section" aria-live="polite">
+      <div>
+        <p class="eyebrow">YOUR SELECTION</p>
+        <h2>Flower basket</h2>
+        <p id="basket-message">Your basket is empty. Add a bouquet you like!</p>
+        <ul id="basket-list"></ul>
+      </div>
+      <div class="basket-total">
+        <span>Total</span>
+        <strong id="basket-total">$0</strong>
+        <button id="clear-basket" class="clear-button" type="button">Clear basket</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌸 Samira's Flower Shop · Share kindness, share flowers.</p>
+  </footer>
+</body>
+</html>
